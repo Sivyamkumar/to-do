@@ -31,6 +31,7 @@ pipeline {
                 docker run -d \
                   --name ${APP_NAME} \
                   -p 3000:3000 \
+                  -e DB_URL=mongodb://172.17.0.1:27017/todoapp \
                   ${IMAGE_NAME}:${IMAGE_TAG}
                 """
             }
