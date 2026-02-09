@@ -2,7 +2,7 @@
 FROM node:trixie-slim
 
 # Use a different path to avoid folder name collisions
-WORKDIR /usr/src/app
+WORKDIR .
 
 # Copy dependency definitions
 COPY package*.json ./
